@@ -5,7 +5,14 @@ package s99
  * Date: 4/18/14
  * Time: 19:13
  */
-object P17_SplitAListIntoTwoParts extends App {
+// P17 (*) Split a list into two parts.
+//     The length of the first part is given.  Use a Tuple for your result.
+//
+//     Example:
+//     scala> split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+//     res0: (List[Symbol], List[Symbol]) = (List('a, 'b, 'c),List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+
+object P17 extends App {
 
   def split[A](n: Int, xs: List[A]) = (xs.take(n), xs.drop(n))
 

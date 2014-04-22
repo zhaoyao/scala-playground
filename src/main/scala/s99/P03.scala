@@ -7,7 +7,13 @@ import scala.annotation.tailrec
  * Date: 4/15/14
  * Time: 1:12
  */
-object P03_FindTheKthElementOfAList extends App {
+// P03 (*) Find the Kth element of a list.
+//     By convention, the first element in the list is element 0.
+//
+//     Example:
+//     scala> nth(2, List(1, 1, 2, 3, 5, 8))
+//     res0: Int = 2
+object P03 extends App {
 
   def nthBuiltin[A](n: Int, xs: List[A]) = {
     if (n >= 0) xs(n)

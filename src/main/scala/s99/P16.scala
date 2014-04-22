@@ -5,7 +5,12 @@ package s99
  * Date: 4/18/14
  * Time: 19:06
  */
-object P16_DropEveryNthElementFromAList extends App {
+// P16 (**) Drop every Nth element from a list.
+//     Example:
+//     scala> drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+//     res0: List[Symbol] = List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k)
+
+object P16 extends App {
 
   def drop[A](n: Int, xs: List[A]) = {
     xs.foldRight((List[A](), 1)) {

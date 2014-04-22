@@ -5,7 +5,11 @@ package s99
  * Date: 4/18/14
  * Time: 19:01
  */
-object P13_DuplicateTheElementsOfAList extends App {
+// P15 (**) Duplicate the elements of a list a given number of times.
+//     Example:
+//     scala> duplicateN(3, List('a, 'b, 'c, 'c, 'd))
+//     res0: List[Symbol] = List('a, 'a, 'a, 'b, 'b, 'b, 'c, 'c, 'c, 'c, 'c, 'c, 'd, 'd, 'd)
+object P15 extends App {
 
   def duplicate[A](xs: List[A]) = xs flatMap { e => List(e, e) }
 

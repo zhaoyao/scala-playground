@@ -7,7 +7,12 @@ import scala.annotation.tailrec
  * Date: 4/15/14
  * Time: 0:46
  */
-object P02_FindTheLastButOneElementOfAList extends App {
+// P02 (*) Find the last but one element of a list.
+//     Example:
+//     scala> penultimate(List(1, 1, 2, 3, 5, 8))
+//     res0: Int = 5
+
+object P02 extends App {
 
   def penultimateRecursive[A](xs: List[A]): A = xs match {
     case x :: _ :: Nil => x

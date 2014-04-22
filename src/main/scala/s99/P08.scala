@@ -7,7 +7,16 @@ import scala.annotation.tailrec
  * Date: 4/18/14
  * Time: 0:13
  */
-object P08_EliminateConsecutiveDuplicatesOfListElements extends App {
+// P08 (**) Eliminate consecutive duplicates of list elements.
+//     If a list contains repeated elements they should be replaced with a
+//     single copy of the element.  The order of the elements should not be
+//     changed.
+//
+//     Example:
+//     scala> compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+//     res0: List[Symbol] = List('a, 'b, 'c, 'a, 'd, 'e)
+
+object P08 extends App {
 
   def compressMy[A](xs: List[A]) = {
     def f(prevElt: A, list: List[A], result: List[A]): List[A] =

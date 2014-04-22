@@ -5,7 +5,15 @@ package s99
  * Date: 4/18/14
  * Time: 0:53
  */
-object P09_PackConsecutiveDuplicatesOfListElementsIntoSublists extends App {
+// P09 (**) Pack consecutive duplicates of list elements into sublists.
+//     If a list contains repeated elements they should be placed in separate
+//     sublists.
+//
+//     Example:
+//     scala> pack(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+//     res0: List[List[Symbol]] = List(List('a, 'a, 'a, 'a), List('b), List('c, 'c), List('a, 'a), List('d), List('e, 'e, 'e, 'e))
+
+object P09 extends App {
 
   def pack[A](xs: List[A]) = {
     def p(e: A, sub: List[A], cur: List[A], result: List[List[A]]): List[List[A]] = cur match {

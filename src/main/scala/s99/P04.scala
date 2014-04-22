@@ -7,7 +7,12 @@ import scala.annotation.tailrec
  * Date: 4/15/14
  * Time: 1:22
  */
-object P04_FindTheNumberOfElementsOfAList extends App {
+// P04 (*) Find the number of elements of a list.
+//     Example:
+//     scala> length(List(1, 1, 2, 3, 5, 8))
+//     res0: Int = 6
+
+object P04 extends App {
 
   def sizeBuiltin(xs: List[Any]): Int = {
     xs.size
